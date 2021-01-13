@@ -59,7 +59,7 @@ compatibility:
   # OctoPrint versions being supported.
 
   octoprint:
-  - 1.2.0
+  - 1.5.0
 
   # List of compatible operating systems
   #
@@ -79,10 +79,7 @@ compatibility:
   # operating systems being supported.
 
   os:
-  - linux
-  - windows
-  - macos
-  - freebsd
+  - OpenBSD
 
   # Compatible Python version
   #
@@ -94,7 +91,7 @@ compatibility:
   # is EOL), leave at ">=2.7,<3" - be aware that your plugin will not be allowed to register on the
   # plugin repository if it only support Python 2.
 
-  python: ">=2.7,<3"
+  python: ">=3.7,<666"
 
 ---
 
