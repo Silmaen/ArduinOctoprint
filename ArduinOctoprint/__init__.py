@@ -7,7 +7,8 @@ from __future__ import absolute_import
 import octoprint.plugin
 
 
-class ArduinoctoprintPlugin(octoprint.plugin.SettingsPlugin,
+class ArduinoctoprintPlugin(octoprint.plugin.StartupPlugin,
+							octoprint.plugin.SettingsPlugin,
 							octoprint.plugin.AssetPlugin,
 							octoprint.plugin.TemplatePlugin):
 	"""
@@ -70,6 +71,8 @@ __plugin_name__ = "ArduinOctoprint Plugin"
 # Python 2. New plugins should make sure to run under both versions for now. Uncomment one of the following
 # compatibility flags according to what Python versions your plugin supports!
 __plugin_pythoncompat__ = ">=3.7,<4"  # only python 3
+
+__plugin_implementation__ = ArduinoctoprintPlugin()
 
 
 def __plugin_load__():
