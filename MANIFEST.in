@@ -1,0 +1,4 @@
+include README.md
+recursive-include ArduinOctoprint/templates *
+recursive-include ArduinOctoprint/translations *
+recursive-include ArduinOctoprint/static *
